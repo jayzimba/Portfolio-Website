@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Sticky Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                <i class="fas fa-code me-2"></i>Portfolio
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#bucket-list">Bucket List</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cv">CV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#places-to-visit">Dream Places</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero-section">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1 class="display-4 fw-bold text-white mb-4 animate-fade-in">
+                            Welcome <span class="text-accent"> to my portfolio, please feel free to explore</span>
+                        </h1>
+                        <p class="lead text-white mb-5 animate-fade-in-delay">
+                            Welcome to my portfolio! I'm a passionate web developer creating innovative solutions with cutting-edge technologies. My expertise spans from frontend frameworks web and mobile development to backend systems, delivering exceptional digital experiences that drive business growth.
+                        </p>
+                        <div class="hero-buttons animate-fade-in-delay-2">
+                            <a href="#about" class="btn btn-custom-primary btn-lg me-3">Get Started</a>
+                            <a href="#projects" class="btn btn-outline-light btn-lg">View Projects</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image-container">
+                        <img src="assets/my_image.png" alt="Developer Profile" class="hero-image animate-fade-in-delay">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Programming Tools Section -->
+        <div class="tools-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="tools-logos">
+                            <div class="tool-logo">
+                                <i class="fab fa-html5" title="HTML5"></i>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="tool-logo">
+                                <i class="fab fa-css3-alt" title="CSS3"></i>
+                                <span>CSS3</span>
+                            </div>
+                            <div class="tool-logo">
+                                <i class="fab fa-js-square" title="JavaScript"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="tool-logo">
+                                <i class="fab fa-react" title="React"></i>
+                                <span>React</span>
+                            </div>
+                            <div class="tool-logo">
+                                <i class="fab fa-node-js" title="Node.js"></i>
+                                <span>Node.js</span>
+                            </div>
+                            <div class="tool-logo">
+                                <i class="fab fa-python" title="Python"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="tool-logo">
+                                <i class="fab fa-git-alt" title="Git"></i>
+                                <span>Git</span>
+                            </div><div class="tool-logo">
+                                <i class="fab fa-aws" title="AWS"></i>
+                                <span>AWS</span>
+                            </div>
+                            <div class="tool-logo">
+                                <i class="fas fa-database" title="MySQL"></i>
+                                <span>MySQL</span>
+                            </div>
+                            <div class="tool-logo">
+                                <i class="fas fa-fire" title="Firebase"></i>
+                                <span>Firebase</span>
+                            </div>
+                            <div class="tool-logo">
+                                <i class="fas fa-leaf" title="MongoDB"></i>
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="tool-logo">
+                                <i class="fab fa-java" title="Java"></i>
+                                <span>Java</span>
+                            </div>
+                            <div class="tool-logo">
+                                <i class="fab fa-php" title="PHP"></i>
+                                <span>PHP</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="title-underline"></div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4">
+                    <div class="about-image">
+                        <img src="./assets/image2.png" 
+                             alt="Profile Photo" class="img-fluid rounded shadow">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <h3 class="mb-4">Hello, I'm Geoffrey Jay Zimba</h3>
+                        <p class="lead mb-4">
+                            I'm a passionate cross-platform developer specializing in mobile app development with React frameworks. 
+                            With expertise in React Native, Expo, and modern mobile technologies, I create seamless experiences 
+                            that work beautifully across iOS and Android platforms.
+                        </p>
+                        <p class="lead mb-4">
+                            My journey in mobile development started with React and has evolved into a passion for building 
+                            high-performance, scalable mobile applications. I believe in writing clean, maintainable code and 
+                            staying up-to-date with the latest mobile development trends and best practices.
+                        </p>
+                        <div class="skills-section">
+                            <h5 class="mb-3">Technical Skills</h5>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="skill-item">
+                                        <span class="skill-name">React Native</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" style="width: 95%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <span class="skill-name">JavaScript/TypeScript</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" style="width: 90%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <span class="skill-name">Expo</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" style="width: 85%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="skill-item">
+                                        <span class="skill-name">Firebase</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <span class="skill-name">Redux/Context</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" style="width: 75%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <span class="skill-name">Mobile UI/UX</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" style="width: 85%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bucket List Section -->
+    <section id="bucket-list" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title">My Bucket List</h2>
+                    <div class="title-underline"></div>
+                    <p class="lead">Dreams, goals, and aspirations that drive me forward</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="bucket-item">
+                        <div class="bucket-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h4>Travel the World</h4>
+                        <p>Visit at least 50 countries and experience different cultures, cuisines, and landscapes.</p>
+                        <div class="bucket-progress">
+                            <span class="progress-text">Progress: 15/50 countries</span>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 30%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="bucket-item">
+                        <div class="bucket-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h4>Launch a Startup</h4>
+                        <p>Create and successfully launch a tech startup that solves real-world problems.</p>
+                        <div class="bucket-progress">
+                            <span class="progress-text">Progress: Planning Phase</span>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 20%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="bucket-item">
+                        <div class="bucket-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h4>Learn New Languages</h4>
+                        <p>Master 5 programming languages and become fluent in 3 spoken languages.</p>
+                        <div class="bucket-progress">
+                            <span class="progress-text">Progress: 3/5 programming, 1/3 spoken</span>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 40%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="bucket-item">
+                        <div class="bucket-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h4>Run a Marathon</h4>
+                        <p>Complete a full marathon and maintain a healthy, active lifestyle.</p>
+                        <div class="bucket-progress">
+                            <span class="progress-text">Progress: Training Phase</span>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 60%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="bucket-item">
+                        <div class="bucket-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h4>Write a Book</h4>
+                        <p>Write and publish a book about technology, personal development, or fiction.</p>
+                        <div class="bucket-progress">
+                            <span class="progress-text">Progress: Outline Complete</span>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 25%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="bucket-item">
+                        <div class="bucket-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>Mentor Others</h4>
+                        <p>Mentor 100+ aspiring developers and help them achieve their career goals.</p>
+                        <div class="bucket-progress">
+                            <span class="progress-text">Progress: 15/100 mentees</span>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 15%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title">My Projects</h2>
+                    <div class="title-underline"></div>
+                    <p class="lead">Showcasing my best work and technical expertise</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://tse2.mm.bing.net/th/id/OIP.xW_nTei38i2fJaN5b-nQBwHaFM?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Project 1">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-light btn-sm me-2"><i class="fas fa-external-link-alt"></i> Live</a>
+                                    <a href="https://github.com/jayzimba?tab=repositories" target="_blank" class="btn btn-outline-light btn-sm"><i class="fab fa-github"></i> Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>ERP Mobile Dashboard</h4>
+                            <p>Cross-platform ERP mobile app for inventory management, sales tracking, and business analytics.</p>
+                            <div class="project-tech">
+                                <span class="badge bg-success">React Native</span>
+                                <span class="badge bg-light text-dark">Firebase</span>
+                                <span class="badge bg-light text-dark">Redux</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://corporate.payu.com/wp-content/uploads/2022/02/payment-gateway-generic_990x640.png" alt="Project 2">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-light btn-sm me-2"><i class="fas fa-external-link-alt"></i> Live</a>
+                                    <a href="https://github.com/jayzimba?tab=repositories" target="_blank" class="btn btn-outline-light btn-sm"><i class="fab fa-github"></i> Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>Mobile Payment Gateway</h4>
+                            <p>Secure payment processing app with multiple payment methods and transaction management.</p>
+                            <div class="project-tech">
+                                <span class="badge bg-success">React Native</span>
+                                <span class="badge bg-light text-dark">Stripe API</span>
+                                <span class="badge bg-light text-dark">Expo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://th.bing.com/th/id/R.591078c0426f3ecefe5a4592ce607c82?rik=tyK9VZ2K%2f0BSkg&pid=ImgRaw&r=0" alt="Project 3">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-light btn-sm me-2"><i class="fas fa-external-link-alt"></i> Live</a>
+                                    <a href="https://github.com/jayzimba?tab=repositories" target="_blank" class="btn btn-outline-light btn-sm"><i class="fab fa-github"></i> Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>Accounting Management App</h4>
+                            <p>Mobile accounting software for expense tracking, invoicing, and financial reporting.</p>
+                            <div class="project-tech">
+                                <span class="badge bg-success">React Native</span>
+                                <span class="badge bg-light text-dark">SQLite</span>
+                                <span class="badge bg-light text-dark">Context API</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://firmway.in/wp-content/uploads/2023/02/firmway-blog-1-scaled.jpg" alt="Project 4">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-light btn-sm me-2"><i class="fas fa-external-link-alt"></i> Live</a>
+                                    <a href="https://github.com/jayzimba?tab=repositories" target="_blank" class="btn btn-outline-light btn-sm"><i class="fab fa-github"></i> Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>Business Automation Suite</h4>
+                            <p>Workflow automation app for process management, task scheduling, and team collaboration.</p>
+                            <div class="project-tech">
+                                <span class="badge bg-success">React Native</span>
+                                <span class="badge bg-light text-dark">Firebase</span>
+                                <span class="badge bg-light text-dark">Redux Toolkit</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://d2ms8rpfqc4h24.cloudfront.net/Inventory_Management_System_Guide_371bf8be3a.jpg" alt="Project 5">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-light btn-sm me-2"><i class="fas fa-external-link-alt"></i> Live</a>
+                                    <a href="https://github.com/jayzimba?tab=repositories" target="_blank" class="btn btn-outline-light btn-sm"><i class="fab fa-github"></i> Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>Inventory Management App</h4>
+                            <p>Real-time inventory tracking with barcode scanning, stock alerts, and supplier management.</p>
+                            <div class="project-tech">
+                                <span class="badge bg-success">React Native</span>
+                                <span class="badge bg-light text-dark">MongoDB</span>
+                                <span class="badge bg-light text-dark">Expo Camera</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/4c8afb154699885.6346e47bd9295.jpg" alt="Project 6">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-light btn-sm me-2"><i class="fas fa-external-link-alt"></i> Live</a>
+                                    <a href="https://github.com/jayzimba?tab=repositories" target="_blank" class="btn btn-outline-light btn-sm"><i class="fab fa-github"></i> Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>Company Analytics Dashboard</h4>
+                            <p>Comprehensive reporting dashboard with real-time KPIs, performance metrics, and interactive charts.</p>
+                            <div class="project-tech">
+                                <span class="badge bg-success">React Native</span>
+                                <span class="badge bg-light text-dark">Chart.js</span>
+                                <span class="badge bg-light text-dark">Firebase</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CV Section -->
+    <section id="cv" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title">Curriculum Vitae</h2>
+                    <div class="title-underline"></div>
+                    <p class="lead">My professional journey and qualifications</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="cv-content">
+                        <!-- Education -->
+                        <div class="cv-section">
+                            <h3 class="cv-section-title">
+                                <i class="fas fa-graduation-cap me-3"></i>Education
+                            </h3>
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <h5>Bachelor of Information Technology</h5>
+                                        <p class="text-muted">Zambia University Of Technology • 2019 - 2022</p>
+                                        <p>Specialized in Information Technology with focus on web development, computer networking, Systems analysis and design and database systems.</p>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </div>
+
+                        <!-- Experience -->
+                        <div class="cv-section">
+                            <h3 class="cv-section-title">
+                                <i class="fas fa-briefcase me-3"></i>Work Experience
+                            </h3>
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <h5>Software Developer</h5>
+                                        <p class="text-muted">Zambia University Of Technology • 2023</p>
+                                        <p>Internship in student portal and other applications development and IT support.</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <h5>Software Developer</h5>
+                                        <p class="text-muted">Wedeveloper Zambia • 2022</p>
+                                        <p>lead mobile app development and IT support.</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <h5>Systems Developer mobile aps</h5>
+                                        <p class="text-muted">Zambia State Insurance • 2023 -present</p>
+                                        <p>Developing mobile apps for the company and ERP applications development .</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <h5>CTO and Lead Developer</h5>
+                                        <p class="text-muted">Digital Payment Solution • 2024 -present</p>
+                                        <p>CTO and lead developer for the company.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Skills -->
+                        <div class="cv-section">
+                            <h3 class="cv-section-title">
+                                <i class="fas fa-code me-3"></i>Technical Skills
+                            </h3>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6>Frontend</h6>
+                                    <ul class="skill-list">
+                                        <li>HTML5, CSS3, JavaScript (ES6+)</li>
+                                        <li>React.js, Vue.js, Angular</li>
+                                        <li>Bootstrap, Tailwind CSS, SASS</li>
+                                        <li>Responsive Design, PWA</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6>Backend</h6>
+                                    <ul class="skill-list">
+                                        <li>Node.js, Express.js</li>
+                                        <li>Python, Django, Flask</li>
+                                        <li>PHP, Laravel</li>
+                                        <li>RESTful APIs, GraphQL</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6>Database</h6>
+                                    <ul class="skill-list">
+                                        <li>MySQL, PostgreSQL</li>
+                                        <li>MongoDB, Redis</li>
+                                        <li>Database Design, Optimization</li>
+                                        <li>ORM (Sequelize, Mongoose)</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6>Tools & Others</h6>
+                                    <ul class="skill-list">
+                                        <li>Git, GitHub, GitLab</li>
+                                        <li>Docker, AWS, Heroku</li>
+                                        <li>Jest, Mocha, Cypress</li>
+                                        <li>Agile, Scrum, JIRA</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Certifications -->
+                        <div class="cv-section">
+                            <h3 class="cv-section-title">
+                                <i class="fas fa-certificate me-3"></i>Certifications
+                            </h3>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <div class="certification-card">
+                                        <h6>SQL database administrator</h6>
+                                        <p class="text-muted">SOLO Learn • 2022</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="certification-card">
+                                        <h6>React native developer</h6>
+                                        <p class="text-muted">SOLO Learn • 2023</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="certification-card">
+                                        <h6>ICTAZ Certified</h6>
+                                        <p class="text-muted">ICTAZ • 2023</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="title-underline"></div>
+                    <p class="lead">Ready to bring your mobile app ideas to life? Let's collaborate!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="contact-content">
+                        <div class="row">
+                            <div class="col-lg-5 mb-4">
+                                <div class="contact-info">
+                                    <h4 class="mb-4">Let's Connect</h4>
+                                    <p class="text-muted mb-4">I'm always excited to work on new mobile app projects. Whether you need a business app, payment gateway, or custom solution, let's discuss how I can help bring your vision to reality.</p>
+                                    
+                                    <div class="contact-item">
+                                        <div class="contact-icon">
+                                            <i class="fas fa-envelope"></i>
+                                        </div>
+                                        <div class="contact-details">
+                                            <h6>Email</h6>
+                                            <span>jayzimba40@gmail.com</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="contact-item">
+                                        <div class="contact-icon">
+                                            <i class="fas fa-phone"></i>
+                                        </div>
+                                        <div class="contact-details">
+                                            <h6>Phone</h6>
+                                            <span>+260 777 603 060</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="contact-item">
+                                        <div class="contact-icon">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                        </div>
+                                        <div class="contact-details">
+                                            <h6>Location</h6>
+                                            <span>Lusaka, Zambia</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="contact-item">
+                                        <div class="contact-icon">
+                                            <i class="fas fa-clock"></i>
+                                        </div>
+                                        <div class="contact-details">
+                                            <h6>Available</h6>
+                                            <span>Mon - Fri, 9AM - 6PM CAT</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="social-links mt-4">
+                                        <h6 class="mb-3">Follow Me</h6>
+                                        <div class="social-grid">
+                                            <a href="#" class="social-link" title="LinkedIn">
+                                                <i class="fab fa-linkedin"></i>
+                                            </a>
+                                            <a href="#" class="social-link" title="GitHub">
+                                                <i class="fab fa-github"></i>
+                                            </a>
+                                            <a href="#" class="social-link" title="Twitter">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                            <a href="#" class="social-link" title="Instagram">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                            <a href="#" class="social-link" title="WhatsApp">
+                                                <i class="fab fa-whatsapp"></i>
+                                            </a>
+                                            <a href="#" class="social-link" title="Telegram">
+                                                <i class="fab fa-telegram"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="contact-form-container">
+                                    <h4 class="mb-4">Send Me a Message</h4>
+                                    <form class="contact-form">
+                                        <div class="row">
+                                            <div class="col-md-6 mb-3">
+                                                <div class="form-group">
+                                                    <label for="name">Full Name *</label>
+                                                    <input type="text" id="name" class="form-control" placeholder="Your full name" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <div class="form-group">
+                                                    <label for="email">Email Address *</label>
+                                                    <input type="email" id="email" class="form-control" placeholder="your.email@example.com" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 mb-3">
+                                                <div class="form-group">
+                                                    <label for="phone">Phone Number</label>
+                                                    <input type="tel" id="phone" class="form-control" placeholder="+260 955 123 456">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <div class="form-group">
+                                                    <label for="subject">Project Type *</label>
+                                                    <select id="subject" class="form-control" required>
+                                                        <option value="">Select project type</option>
+                                                        <option value="mobile-app">Mobile App Development</option>
+                                                        <option value="business-app">Business Application</option>
+                                                        <option value="payment-gateway">Payment Gateway</option>
+                                                        <option value="erp-system">ERP System</option>
+                                                        <option value="consultation">Consultation</option>
+                                                        <option value="other">Other</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="form-group">
+                                                <label for="message">Project Details *</label>
+                                                <textarea id="message" class="form-control" rows="6" placeholder="Tell me about your project, requirements, timeline, and budget..." required></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="newsletter">
+                                                <label class="form-check-label" for="newsletter">
+                                                    Subscribe to my newsletter for mobile development tips
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-custom-primary btn-lg">
+                                            <i class="fas fa-paper-plane me-2"></i>Send Message
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Places to Visit Section -->
+    <section id="places-to-visit" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title">Places I Wish to Visit</h2>
+                    <div class="title-underline"></div>
+                    <p class="lead">Dream destinations that inspire my creativity and fuel my wanderlust</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="places-carousel">
+                        <div class="carousel-container">
+                            <div class="carousel-track">
+                               
+                                <div class="place-card">
+                                    <div class="place-image">
+                                        <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=400&h=300&fit=crop" alt="Paris, France">
+                                        <div class="place-overlay">
+                                            <div class="place-info">
+                                                <h4>Paris</h4>
+                                                <p>France</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="place-card">
+                                    <div class="place-image">
+                                        <img src="https://cdn.britannica.com/12/84812-050-C4CCFA02/Water-edge-view-district-Shanghai-China-Huangpu.jpg" alt="Shanghai">
+                                        <div class="place-overlay">
+                                            <div class="place-info">
+                                                <h4>Shanghai</h4>
+                                                <p>China</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="place-card">
+                                    <div class="place-image">
+                                        <img src="https://images.unsplash.com/photo-1528181304800-259b08848526?w=400&h=300&fit=crop" alt="Barcelona, Spain">
+                                        <div class="place-overlay">
+                                            <div class="place-info">
+                                                <h4>Barcelona</h4>
+                                                <p>Spain</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="place-card">
+                                    <div class="place-image">
+                                        <img src="https://www.expertafrica.com/images/background-image/9f281521bd2041eaa34e7c105541eb15.jpg" alt="Zanzibar">
+                                        <div class="place-overlay">
+                                            <div class="place-info">
+                                                <h4>Zanzibar</h4>
+                                                <p>Tanzania</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="place-card">
+                                    <div class="place-image">
+                                        <img src="https://images.unsplash.com/photo-1523059623039-a9ed027e7fad?w=400&h=300&fit=crop" alt="Sydney, Australia">
+                                        <div class="place-overlay">
+                                            <div class="place-info">
+                                                <h4>Sydney</h4>
+                                                <p>Australia</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="place-card">
+                                    <div class="place-image">
+                                        <img src="https://th.bing.com/th/id/R.7ab9aaff75f184a9925273e17281acc7?rik=f2aZi3pwNNqefw&riu=http%3a%2f%2fdubaitravelator.com%2fwp-content%2fthemes%2fdirectorypress%2fthumbs%2fDubai-things-to-do-in-dubai-uae.jpg&ehk=Q2OQ8hHb5ttq3mXL6W1oaIkOPcU0QaUNOdDBUtZu6No%3d&risl=&pid=ImgRaw&r=0" alt="Dubai, UAE">
+                                        <div class="place-overlay">
+                                            <div class="place-info">
+                                                <h4>Dubai</h4>
+                                                <p>Emirates</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>&copy; <script>document.write(new Date().getFullYear());</script> My Portfolio. All rights reserved.</p>
+                    <p class="mb-0">Designed with <i class="fas fa-heart text-danger"></i> and lots of caffeine 😁</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
